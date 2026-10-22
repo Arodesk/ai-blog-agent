@@ -42,7 +42,7 @@ def generate_article(topic: str, research_brief: str):
     """
     
     completion = client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="llama-3.1-8b-instant",
         messages=[{"role": "user", "content": prompt}],
         temperature=0.5,
     )
